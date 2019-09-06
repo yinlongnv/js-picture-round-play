@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  
+}
+
+#container {
+  position: relative;
+  width: 37.5rem;
+  height: 25rem;
+  margin: 1rem auto;
+  border: 0.25rem solid #333;
+  overflow: hidden;
+}
+
+/* 图片样式部分 */
+#list {
+  position: absolute;
+  width: 262.5rem;
+  height: 25rem;
+  z-index: 1;
+}
+
+#list img {
+  float: left;
+  width: 37.5rem;
+  height: 25rem;
+}
+
+/* 圆形按钮样式部分 */
+#buttons {
+  position: absolute;
+  width: 6.25rem;
+  height: 0.625rem;
+  left: 15.625rem;
+  bottom: 1.25rem;
+  z-index: 2;
+}
+
+#buttons span {
+  float: left;
+  width: 0.625rem;
+  height: 0.625rem;
+  border: 0.0625rem solid #fff;
+  border-radius: 50%;
+  background: #333;
+  margin-right: 0.3125rem;
+  cursor: pointer;
+}
+
+#buttons .on {
+  background: rgb(255, 60, 0);
+}
+
+/* 箭头按钮样式部分 */
+.arrow {
+  position: absolute;
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2rem;
+  top: 11rem;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.7)
+}
+
+#container:hover .arrow {
+  display: block;
+}
+
+#prev {
+  left: 1rem;
+}
+
+#next {
+  right: 1rem;
+}

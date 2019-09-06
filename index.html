@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>js实现图片轮播效果</title>
+    <meta name="description" content="js实现图片轮播效果">
+    <meta name="keywords" content="js,图片，轮播">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="container">
+      <!-- 图片部分 -->
+      <div id="list" style="left: -37.5rem;">
+        <img src="img/e.jpg" alt="轮播图片5">
+        <img src="img/a.jpg" alt="轮播图片1">
+        <img src="img/b.jpg" alt="轮播图片2">
+        <img src="img/c.jpg" alt="轮播图片3">
+        <img src="img/d.jpg" alt="轮播图片4">
+        <img src="img/e.jpg" alt="轮播图片5">
+        <img src="img/a.jpg" alt="轮播图片1">
+      </div>
+      <!-- 圆形按钮部分 -->
+      <div id="buttons">
+        <span index="1" class="on"></span>
+        <span index="2"></span>
+        <span index="3"></span>
+        <span index="4"></span>
+        <span index="5"></span>
+      </div>
+      <!-- 箭头按钮部分 -->
+      <a href="javascript:;" class="arrow" id="prev">&lt;</a>
+      <a href="javascript:;" class="arrow" id="next">&gt;</a>
+    </div>
+    <script src="js/index.js" async defer></script>
+  </body>
+</html>
